@@ -1,0 +1,11 @@
+python3 /usr/share/java-utils/pom_editor.py pom_remove_dep com.google.code.maven-scm-provider-svnjava:maven-scm-provider-svnjava
+
+python3 /usr/share/java-utils/pom_editor.py pom_remove_dep org.tmatesoft.svnkit:svnkit
+
+python3 /usr/share/java-utils/pom_editor.py pom_remove_plugin  :maven-enforcer-plugin
+
+python3 /usr/share/java-utils/pom_editor.py pom_remove_plugin  :maven-invoker-plugin
+
+
+# junit dependency was removed in Plexus 1.6
+python3 /usr/share/java-utils/pom_editor.py pom_add_dep        junit:junit::test
