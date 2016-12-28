@@ -4,7 +4,7 @@
 #
 Name     : jdk-buildnumber-maven-plugin
 Version  : 1.3
-Release  : 1
+Release  : 2
 URL      : http://central.maven.org/maven2/org/codehaus/mojo/buildnumber-maven-plugin/1.3/buildnumber-maven-plugin-1.3-source-release.zip
 Source0  : http://central.maven.org/maven2/org/codehaus/mojo/buildnumber-maven-plugin/1.3/buildnumber-maven-plugin-1.3-source-release.zip
 Summary  : No detailed summary available
@@ -110,13 +110,13 @@ python3 /usr/share/java-utils/pom_editor.py pom_add_dep        junit:junit::test
 python3 /usr/share/java-utils/mvn_build.py
 
 %install
-xmvn-install  -R .xmvn-reactor -n buildnumber-maven-plugin-1.3 -d %{buildroot}
+xmvn-install  -R .xmvn-reactor -n buildnumber-maven-plugin -d %{buildroot}
 
 %files
 %defattr(-,root,root,-)
 
 %files data
 %defattr(-,root,root,-)
-/usr/share/java/buildnumber-maven-plugin-1.3/buildnumber-maven-plugin.jar
-/usr/share/maven-metadata/buildnumber-maven-plugin-1.3.xml
-/usr/share/maven-poms/buildnumber-maven-plugin-1.3/buildnumber-maven-plugin.pom
+/usr/share/java/buildnumber-maven-plugin/buildnumber-maven-plugin.jar
+/usr/share/maven-metadata/buildnumber-maven-plugin.xml
+/usr/share/maven-poms/buildnumber-maven-plugin/buildnumber-maven-plugin.pom
